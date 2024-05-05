@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Мой сайт</title>
+    <style>
+        #links{list-style: none; margin:0}
+        #links li a:hover{background: #D5D5D5}
+
+        .pdfobject-container { height: 500px;}
+        .pdfobject { border: 1px solid #666; }
+        .btn {
+            width: 50em; /* Ширина кнопки */
+            height: 30pm; /* Высота кнопки */
+            border: 2px solid #000000; /* Параметры рамки */
+            font:16px/25px "v_CCAdamKubert", sans-serif; /* Размер текста */
+            display: inline-block; /* Строчно-блочный элемент */
+            background: #ffffff; /* Серый цвет фона */
+            color: #000; /* Белый цвет текста */
+            text-decoration: none;
+            padding: 1rem 1.5rem; /* Поля вокруг текста */
+            border-radius: 3px; /* Скругляем уголки */
+            margin-bottom: 1em; /* Расстояние снизу */
+           }
+        .btn2 {
+            width: 20em; /* Ширина кнопки */
+            height: 30pm; /* Высота кнопки */
+            border: 2px solid #000000; /* Параметры рамки */
+            transform: translate(0.25em, 0.5em);
+            max-width: 30em"
+            font:16px/25px "v_CCAdamKubert", sans-serif; /* Размер текста */
+            display: inline-block; /* Строчно-блочный элемент */
+            background: #ffffff; /* Серый цвет фона */
+            color: #000; /* Белый цвет текста */
+            text-decoration: none;
+            border-radius: 3px; /* Скругляем уголки */
+            margin-bottom: 1em; /* Расстояние снизу */
+           }
+   .code
+  {
+    border: 1px solid #E0E0E0;
+    padding: 1px;
+    margin: 0 1ex;
+    overflow: hidden;
+
+    font-family: Consolas, monospace;
+    font-size: 100%;
+    color: black;
+    line-height: 1.4em;
+    white-space: pre;   /* важно чтобы сохранялись переносы */
+  }
+
+  .line
+  {
+    position: relative; /* для webkit, иначе при начале выделения с нумерации будет
+                           выделяться текст с самого начала блока */
+    zoom: 1;            /* для IE6/7 */
+    white-space: pre;   /* важно чтобы сохранялись переносы в IE7 */
+  }
+
+  .even
+  {
+    background: #F8F8F8;
+  }
+  .odd
+  {
+    background: #F0F0F0;
+  }
+
+  .lineNumber
+  {
+    display: block;
+    position: absolute;
+    left: 0;
+
+    padding: 0 .5ex;
+    margin: 0;
+    width: 6ex;
+    line-height: 1.4em;
+    height: 1.4em;
+
+    background: none;
+    border: none;
+    font-family: Consolas, monospace;
+    font-size: 100%;
+    text-align: right;
+    color: #666;
+
+      -moz-user-select: none;    /* задаем user-select для Firefox & webkit, чтобы
+                                    блок не попадал в область выделения*/
+      -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;        /* фактически это свойство делает ненужным блок .over,
+                                    но пока оно поддерживается только в Firefox & webkit */
+  }
+  .over
+  {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 7ex;
+    height: 1.4em;
+    z-index: 1;
+    background: url(.);          /* для IE и Opera, иначе блок будет "простреливаться"
+                                    (пропускать события мыши нижележащим блокам) */
+  }
+
+  .lineContent
+  {
+    margin-left: 7ex;
+    padding-left: 2ex;
+    border-left: 2px solid #33BB66;
+    display: block;
+    white-space: pre-wrap;      /* сохраняем форматирование, но оставляем возможность переносить по словам */
+  }
+
+  .token-string
+  {
+    color: blue;
+  }
+  .token-comment
+  {
+    color: #008200;
+  }
+  .token-keyword
+  {
+    color: #006699;
+    font-weight: bold;
+  }
+
+
+
+
+    </style>
+</head>
+<body>
+<main>
+    <div style="margin-left: 200px;">
+    <h1 style="margin-left: 30px;">Документация</h1>
+    <p>Python, c#, java, c++, SQL, paskal</p>
+    <article>
+        <section>
+            <h2>Python</h2>
+            <div  style="margin-left: 30px;">
+
+<h3>1. requests</h3>
+<p>Библиотека для работы с интернетом</p>
+<span class="lineContent">
+import requests
+import json
+
+r = requests.get('https://api.github.com/events').json()
+print(r)
+</span>
+<a href="https://requests.readthedocs.io/en/latest/user/quickstart/">Документация о requests</a>
+<h3>2. Курс питона (Начальный + Промышленный)</h3>
+<a href="https://onlyjoin.github.io/Piton_ychebnik/page1"><p>Учебник по питону</p></a>
+<h3>3. Разработка сайта на html и публикация на github</h3>
+<a href="https://mixelte.github.io/pages/html-css-js/"><p>Учебник по html</p></a>
+<a href="https://netology-code.github.io/guides/github-pages/"><p>Публикация на github</p></a>
+<h3>4. Фоновое приложение с выходом в интернет</h3>
+<a href="https://github.com/124476/Vzlomchik"><p>Троль-приложение</p></a>
+<h3>5. Публикация сайта Flask на PythonAnyWhere</h3>
+<a href="https://yandex.ru/video/preview/2301588803586045358"><p>PythonAnyWhere</p></a>
+            </div>
+        </section>
+        <section>
+            <h2>Paskal</h2>
+            <div  style="margin-left: 30px;">
+            </div>
+        </section>
+        <section>
+            <h2>C#</h2>
+            <div  style="margin-left: 30px;">
+<h3>1. Установка Visual Studio</h3>
+<a href="https://metanit.com/sharp/tutorial/1.2.php">Visual Studio</a>
+<h3>2. Wpf c#</h3>
+<a href="https://metanit.com/sharp/wpf/"><p>Руководство по wpf C#</p></a>
+<a href="https://netology-code.github.io/guides/github-pages/"><p>Публикация на github</p></a>
+<h3>3. Wpf c# дополнительные технологии + git</h3>
+<a href="https://github.com/124476/AllTechnologyWpf"><p>Технологии Wpf c# + git</p></a>
+            </div>
+        </section>
+        <section>
+            <h2>C++</h2>
+            <div  style="margin-left: 30px;">
+            </div>
+        </section>
+        <section>
+            <h2>Java</h2>
+            <div  style="margin-left: 30px;">
+            </div>
+        </section>
+        <section>
+            <h2>SQL</h2>
+            <div  style="margin-left: 30px;">
+
+<h3>1. Установка SQL sever для работы с C# (SQL server</h3>
+<ul style="list-style-type: none">
+    <li><a href="https://metanit.com/sql/sqlserver/1.2.php">SQL server часть 1</a></li>
+    <li><a href="https://metanit.com/sql/sqlserver/1.3.php">SQL server часть 2</a></li>
+</ul>
+<h3>2. Установка SQL для работы с Python (SQLite)</h3>
+<a href="https://sqlitestudio.pl/"><p>SQLite скачать</p></a>
+<h3>3. SQL запросы</h3>
+<a href="https://onlyjoin.github.io/Piton_ychebnik/shpargl/sql_zap.html"><p>Запросы SQl</p></a>
+            </div>
+        </section>
+    </article>
+    </div>
+</main>
+<footer>
+    <p>-- Кр-Илья</p>
+</footer>
+<!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+</body>
+</html>
